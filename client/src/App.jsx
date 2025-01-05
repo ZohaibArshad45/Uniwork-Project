@@ -10,7 +10,7 @@ import Header from "./components/Header";
 const App = () => {
   return (
     <BrowserRouter>
-    <Header/>
+      <Header />
       {/* for router install pakage (npm i react-router-dom) */}
       <Routes>
         <Route path="/" element={<Home />} />
