@@ -5,10 +5,12 @@ import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import Profile from "./pages/Profile";
 import SignUP from "./pages/SignUP";
+import Header from "./components/Header";
 
 const App = () => {
   return (
     <BrowserRouter>
+    <Header/>
       {/* for router install pakage (npm i react-router-dom) */}
       <Routes>
         <Route path="/" element={<Home />} />
@@ -16,7 +18,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/SignUP" element={<Contact />} />
+        <Route path="/SignUP" element={<SignUP />} />
       </Routes>
     </BrowserRouter>
   );
