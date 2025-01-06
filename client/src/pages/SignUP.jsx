@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaEye, FaEyeSlash } from 'react-icons/fa'; // Import eye icons
+// import AAuth from '../components/AAuth';
+import Gauth from '../components/Gauth';
+
 
 
 const SignUp = () => {
@@ -122,6 +125,8 @@ const SignUp = () => {
           >
             {isLoading ? 'Signing Up...' : 'SIGN UP'}
           </button>
+          {/* <AAuth /> */}
+          <Gauth />
         </form>
         {/* Feedback Message */}
         {message && (
