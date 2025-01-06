@@ -3,6 +3,8 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import userRouter from "./routes/user.route.js"
 import authRouter from './routes/auth.route.js'
+import cors from 'cors';
+
 
 
 // npm i dotenv for process.env.MOGO
@@ -33,3 +35,5 @@ app.use((err, req, res, next)=>{
         message,
     })
 })
+
+app.use(cors());
