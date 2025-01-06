@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { FaEye, FaEyeSlash } from 'react-icons/fa'; // Import eye icons
+
 
 const SignUp = () => {
   const [formData, setFormData] = useState({});
@@ -87,7 +89,7 @@ const SignUp = () => {
               className="absolute top-1/2 right-3 -translate-y-1/2 cursor-pointer text-gray-500 hover:text-gray-800"
               onClick={() => setShowPassword(!showPassword)}
             >
-              {showPassword ? '👁️' : '👁️‍🗨️'}
+              {showPassword ? <FaEyeSlash /> : <FaEye />}
             </span>
           </div>
           <div className="relative">
@@ -103,7 +105,7 @@ const SignUp = () => {
               className="absolute top-1/2 right-3 -translate-y-1/2 cursor-pointer text-gray-500 hover:text-gray-800"
               onClick={() => setShowConfirmPassword(!showConfirmPassword)}
             >
-              {showConfirmPassword ? '👁️' : '👁️‍🗨️'}
+              {showConfirmPassword ? <FaEyeSlash /> : <FaEye />}
             </span>
           </div>
           <button
