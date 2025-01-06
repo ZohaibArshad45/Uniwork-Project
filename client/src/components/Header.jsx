@@ -6,7 +6,7 @@ const Header = () => {
             <div className="flex justify-between items-center max-w-6xl mx-auto p-3">
                 <Link to='/'>
                     <h1 className="font-bold text-lg sm:text-2xl">
-                        <span className="text-blue-700">Uni</span>
+                        <span className="text-blue-900">Uni</span>
                         <span className="text-stone-700">Work</span>
                     </h1>
                 </Link>
@@ -20,10 +20,10 @@ const Header = () => {
                     <FaSearch className="text-stone-700" />
                 </form>
                 <ul className="flex gap-2 sm:gap-6 font-semibold text-stone-800">
-                    <Link to='/'> <li className="hidden sm:inline hover:text-blue-700">Home</li></Link>
-                    <Link to='/profile'> <li className=" hover:text-blue-700">Profile</li></Link>
-                    <Link to='/about'> <li className="hidden sm:inline hover:text-blue-700">About</li></Link>
-                    <Link to='/login'> <li className=" hover:text-blue-700">Login</li></Link>
+                    <Link to='/'> <li className="hidden sm:inline hover:text-blue-900">Home</li></Link>
+                    <Link to='/profile'> <li className=" hover:text-blue-900">Profile</li></Link>
+                    <Link to='/about'> <li className="hidden sm:inline hover:text-blue-900">About</li></Link>
+                    <Link to='/login'> <li className=" hover:text-blue-900">Login</li></Link>
                 </ul>
             </div>
         </header>
