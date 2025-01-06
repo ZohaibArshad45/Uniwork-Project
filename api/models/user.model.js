@@ -11,6 +11,8 @@ const userSchema = new mongoose.Schema ({
         required: true,
         unique:true,
     },
+    // for password (like if any body hack database the password is not showing) in database we need 
+    // npm i bcryptjs
     password:{
         type: String,
         required: true,
