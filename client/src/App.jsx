@@ -6,6 +6,8 @@ import Login from "./pages/Login";
 import Profile from "./pages/Profile";
 import SignUP from "./pages/SignUP";
 import Header from "./components/Header";
+import PrivateRoute from './components/PrivateRoute';
+
 
 const App = () => {
   return (
@@ -14,11 +16,16 @@ const App = () => {
       {/* for router install pakage (npm i react-router-dom) */}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route element={<PrivateRoute />}>
+          <Route path='/profile' element={<Profile />} />
+        </Route>
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        {/* <Route path="/contact" element={<Contact />} /> */}
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUP />} />
+        <Route element={<PrivateRoute />}>
+          <Route path='/profile' element={<Profile />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
