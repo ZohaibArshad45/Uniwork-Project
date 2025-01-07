@@ -1,5 +1,7 @@
 import { useSelector } from 'react-redux';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 import {
   updateUserStart,
   updateUserSuccess,
@@ -108,6 +110,9 @@ export default function Profile() {
         >
           {loading ? 'Loading...' : 'Update'}
         </button>
+        <Link className='bg-green-700 text-white p-3 rounded-lg uppercase text-center hover:opacity-95' to={"/create-listing"}>
+          Create Listing
+        </Link>
       </form>
 
       {/* Account Actions */}
